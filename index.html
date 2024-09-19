@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Nina Tells the Weather</title>
+  </head>
+
+  <body>
+      <div class="weather-app">
+    <header>      
+        <form id="search-form">
+          <input type="search" placeholder="Enter a City" class="input-bar" id="search-input"/>
+          <input type="submit" value="Search" class="button" />
+        </form>
+    </header> 
+    <main>
+        <div class="hero-area">
+          <div><h1 class="city-name">Ottawa</h1>
+          <ul>
+            <li>Last updated: <span id="current-date">Thursday,3:00 PM</span></li> 
+            <li>Scattered Clouds</li>
+          </ul>          
+          <div class="main-temp"></div>
+            <div class="weather-icon">🌥</div>
+            <div class="main-temp-value">20<a class="degrees" href="">°C</a>|<a class="degrees" href="">°F</a></div>
+          </div>        
+          <div class="conditions">  
+            <ul class="conditions-list">
+                <li>Humidity: <strong class="details-bolded" id="current-humidity">  88%</strong></li>
+                <li>Wind:<strong class="details-bolded" id="current-wind">  3.13km/h</strong></li>
+            </ul>
+        </div>
+        </div>
+        <div class="weekly-forecast">
+            to come
+        </div>
+        </div>
+    </main>
+    <footer>
+      Coded by
+      <a class="footer-links" href="https://github.com/nberts">Nina Bertrand</a
+      >, is open sourced on
+      <a class="footer-links" href="https://github.com/nberts/WeatherApplication"
+        >GitHub</a>
+    </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
